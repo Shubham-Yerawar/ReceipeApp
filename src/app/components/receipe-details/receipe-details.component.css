@@ -1,0 +1,14 @@
+#imgcontainer {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    /* border: 2px solid black; */
+}
+
+img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    /* you can use % */
+    height: 100%;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table table-striped tablesorter" id="mytable">
+        <thead class="success">
+            <td>Task</td>
+            <td>Priority</td>
+            <td>Validity</td>
+            <td>Status</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of todoItems">
+                <td> {{ item.task }} </td>
+                <td>{{ item.priority }}</td>
+                <td>{{ item.validity }}</td>
+                <td>{{ item.status ? 'active' : 'inactive' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

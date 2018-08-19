@@ -1,0 +1,26 @@
+<div class="container">
+
+    <h1>
+        Receipe List
+    </h1>
+
+    <div>
+        <button class="btn btn-success" routerLink="receipeForm">Add Receipe</button>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <!-- list of all receipes -->
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let receipe of receipes">
+                    <app-receipe-list-item [receipe]="receipe"></app-receipe-list-item>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <!-- children ie router-outlet  -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>

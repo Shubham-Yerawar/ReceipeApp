@@ -1,0 +1,34 @@
+<!-- <div id="main">
+    <div class="list-group">
+        <p>
+            <img src="{{ receipe.image }}" title="{{ receipe.name }}" alt="{{ receipe.name }}" />
+            <ul class="list-group">
+                <li class="list-group-item"><label for="">ID : {{ receipe.id }} </label></li>
+                <li class="list-group-item"><label for="">Name : {{ receipe.name }} </label></li>
+                <li class="list-group-item"><label for="">Desc : {{ receipe.desc }} </label></li>
+            </ul>
+        </p>
+    </div>
+</div> -->
+
+
+<div class="row">
+    <div class="col-md-4 col-sm-6">
+        <img src="{{ receipe.image }}" title="{{ receipe.name }}" alt="{{ receipe.name }}" />
+    </div>
+    <div class="col-md-8 col-sm-6">
+        <ul class="list-group">
+            <!-- <li class="list-group-item"><label for="">ID : {{ receipe.id }} </label></li> -->
+            <li class="list-group-item"><label for="">Name : {{ receipe.name }} </label></li>
+            <li class="list-group-item"><label for="">Desc : {{ receipe.desc }} </label></li>
+            <li class="list-group-item">
+                <a [routerLink]=" receipe.id ">More details </a>
+                <!-- bind routerLink as a property binding to show details in the receipe details component -->
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- try to implement with flexbox -->
